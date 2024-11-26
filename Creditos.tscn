@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv5a1tm41tx1n"]
+
+[ext_resource type="Texture2D" uid="uid://3optn6uf0145" path="res://objetos/final.jpg" id="1_6hia5"]
+[ext_resource type="AudioStream" uid="uid://f04rxsw008hq" path="res://Musica/Samba-Do-Brasil-Ey-Macalena.mp3" id="2_6xkcy"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1915.0
+offset_bottom = 1072.0
+texture = ExtResource("1_6hia5")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_6xkcy")
+volume_db = 2.026
+autoplay = true
